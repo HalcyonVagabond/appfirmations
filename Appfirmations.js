@@ -1,12 +1,13 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
+import LoginPage from './modules/authentication/LoginPage'
 
-export default function App() {
+
+export default function Appfirmations() {
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
+      <LoginPage />
     </View>
   );
 }
@@ -15,12 +16,5 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: 'dodgerblue',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  text: {
-    backgroundColor: 'white',
-    padding: 10,
-    borderRadius: 20,
   },
 });
